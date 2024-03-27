@@ -1,4 +1,3 @@
-
 * {
   font-family: "Space Mono", monospace;
   font-style: normal;
@@ -13,6 +12,7 @@
   -webkit-tap-highlight-color: transparent;
   --color: #48cae4;
 }
+
 body {
   background-color: #353535;
   color: #e7e7e7;
@@ -58,10 +58,12 @@ button:hover {
   width: 10px;
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar-track {
   background: #343a40;
   border-radius: 100px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #edf6f9;
   border-radius: 100px;
@@ -82,7 +84,7 @@ button:hover {
 }
 
 .blur {
-  background-color: #293241;
+  background-color: #495057;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -102,7 +104,7 @@ button:hover {
   transition: 0.3s;
 }
 
-#code{
+#code {
   width: 10%;
 }
 
@@ -144,17 +146,20 @@ button:hover {
   border-radius: 2px;
   transition: 0.3s;
 }
+
 .NavbarLinks a:hover:after {
   width: 95%;
 }
+
 .Hamburger {
   display: none;
 }
 
 @media (max-width: 800px) {
-  #code{
+  #code {
     width: 16%;
   }
+
   .Navbar {
     width: 100%;
   }
@@ -167,7 +172,7 @@ button:hover {
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color: #33658a;
+    background-color: #1b263b;
     height: 100vh;
     padding-top: max(20%, 120px);
     transform: translateX(100%);
@@ -195,15 +200,18 @@ button:hover {
     margin: 6px;
     transition: 0.5s;
   }
+
   .barOne {
     rotate: -225deg;
     position: relative;
     top: 4px;
     transition: 0.5s;
   }
+
   .barTwo {
     display: none;
   }
+
   .barThree {
     position: relative;
     bottom: 4px;
@@ -212,7 +220,7 @@ button:hover {
   }
 }
 
-/* HOME PAGE */
+/* HOME PAGE section*/
 
 .HomePage {
   display: flex;
@@ -222,6 +230,7 @@ button:hover {
   margin-bottom: -50px;
   align-items: center;
 }
+
 .HomeText h1 {
   font-weight: 600;
   font-size: 50px;
@@ -235,6 +244,7 @@ button:hover {
   font-size: 40px;
   letter-spacing: 0.6px;
 }
+
 .Avatar {
   display: flex;
   height: 350px;
@@ -248,6 +258,7 @@ button:hover {
     margin-top: 150px;
     padding: 25px;
   }
+
   .HomeText {
     text-align: left;
     display: inline-block;
@@ -255,23 +266,42 @@ button:hover {
 }
 
 @media (max-width: 500px) {
+
   .HomePage {
     min-height: 70vh;
   }
+
   .NavbarLinks {
     inset: 0 0 0 30%;
   }
+
   .HomeText h1 {
     font-weight: 500;
     font-size: 28px;
   }
+
   .TypeEffect {
     font-weight: 500;
     font-size: 24px;
   }
+
+  .Avatar {
+    display: flex;
+    height: 35%;
+    width: 30%;
+  }
+
+  .HomeText {
+    width: 100%;
+  }
+
+  button {
+    font-size: 15px;
+    width: 40%;
+  }
 }
 
-/* ABOUT */
+/* ABOUT section */
 
 .AboutPage {
   display: flex;
@@ -288,20 +318,22 @@ button:hover {
   line-height: 30px;
   letter-spacing: 1.2px;
 }
+
 .AboutTextHeading {
   font-size: 35px;
   font-weight: 600;
   padding-bottom: 40px;
 }
+
 .AboutText a {
   color: var(--color);
   text-decoration: underline;
   font-weight: bold;
 }
 
-.resume-btn button{
+.resume-btn button {
   color: #fffcf2;
-  letter-spacing: 0,5px;
+  letter-spacing: 0, 5px;
   margin: 20px 0;
   background-color: transparent;
   border: 3px solid #48cae4;
@@ -319,6 +351,7 @@ button:hover {
     text-align: center;
     padding: 30px;
   }
+
   .AboutText {
     text-align: left;
     display: inline-block;
@@ -327,6 +360,7 @@ button:hover {
     letter-spacing: 0.6px;
     margin-bottom: 80px;
   }
+
   .AboutTextHeading {
     font-size: 26px;
   }
@@ -359,6 +393,7 @@ button:hover {
   border-radius: 5px;
   transition: 0.5s;
 }
+
 .SkillBox:hover {
   transform: scale(1.2);
   background-color: var(--color);
@@ -373,9 +408,11 @@ button:hover {
 }
 
 @media (max-width: 500px) {
+
   .AboutText {
     font-size: 16px;
   }
+
   .Avatar {
     width: 200px;
     margin-bottom: 25px;
@@ -384,14 +421,23 @@ button:hover {
   .SkillsHeading {
     font-size: 26px;
   }
+
   .SkillBox {
+    align-items: c;
     width: 100px;
     height: 100px;
     font-size: 50px;
   }
 
+  .resume-btn button  {
+    font-size: 15px;
+    width: 50%;
+    gap: 5px;
+  }
+
 }
-/* Project */
+
+/* Project  section */
 
 .projectHeading {
   text-align: center;
@@ -430,11 +476,11 @@ button:hover {
   padding: 1px;
 }
 
-.projectBox:hover{
+.projectBox:hover {
   background-color: #4c5c68;
 }
 
-/* FOOTER */
+/* FOOTER section */
 
 footer {
   width: 90%;
@@ -467,6 +513,7 @@ footer h4 {
   text-decoration: none;
   color: #e7e7e7;
 }
+
 .footerLinks a:hover {
   scale: 1.5;
   color: var(--color);
@@ -516,14 +563,17 @@ footer h4 {
 .form-group textarea {
   height: 100px;
 }
+
 a .submit-btn {
   margin: 0 auto;
   display: flex;
   width: 60%;
 }
+
 a {
   text-decoration: none;
 }
+
 .submitted-message {
   text-align: center;
   color: #ffffff;
